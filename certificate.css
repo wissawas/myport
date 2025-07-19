@@ -1,0 +1,146 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sarabun', sans-serif;
+  background: #f5f6fa;
+  color: #222;
+}
+
+.section {
+  padding: 48px 0 32px 0;
+  background: #f0f0f0;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #222;
+}
+
+.certificate-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 32px;
+  justify-content: center;
+  margin-top: 24px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.certificate-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+  min-width: 220px;
+  max-width: 280px;
+}
+
+.certificate-img-box {
+  width: 100%;
+  height: 180px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.certificate-img {
+  max-width: 95%;
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.certificate-label {
+  font-size: 1.08rem;
+  color: #444;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.certificate-item:nth-child(4),
+.certificate-item:nth-child(5) {
+  width: 40%;
+  min-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .certificate-item {
+    width: 44vw;
+    min-width: 140px;
+    max-width: 220px;
+  }
+  .certificate-img-box {
+    height: 110px;
+  }
+  .certificate-img {
+    max-height: 90px;
+  }
+  .certificate-item:nth-child(4),
+  .certificate-item:nth-child(5) {
+    width: 70vw;
+    min-width: 120px;
+  }
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+  background: #fff;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color 0.2s;
+}
+.lightbox-close:hover {
+  color: #ff5252;
+}
+
+@media (max-width: 700px) {
+  .lightbox-img {
+    max-width: 98vw;
+    max-height: 60vh;
+  }
+  .lightbox-close {
+    top: 12px;
+    right: 18px;
+    font-size: 2.2rem;
+  }
+} 
