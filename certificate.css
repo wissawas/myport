@@ -10,17 +10,23 @@ body, html {
   padding: 48px 0 32px 0;
   background: #f0f0f0;
   border-radius: 18px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  
   max-width: 900px;
   margin: 40px auto 0 auto;
   text-align: center;
 }
 
 .section h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 32px;
-  color: #222;
+  position: relative;
+  top: -50px;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 2px;
+  color: #8A2BE2;
+  border-radius: 18px;
+  padding: 28px 0 18px 0;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .certificate-gallery {
@@ -96,6 +102,10 @@ body, html {
     width: 70vw;
     min-width: 120px;
   }
+  .section h2 {
+    font-size: 2.2rem;
+    padding: 18px 0 10px 0;
+  }
 }
 
 .lightbox-overlay {
@@ -142,5 +152,78 @@ body, html {
     top: 12px;
     right: 18px;
     font-size: 2.2rem;
+  }
+}
+
+.modern-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:  rgb(236, 236, 236);
+  color: #fff;
+  box-shadow: 0 2px 16px rgba(138,43,226,0.28);
+  padding: 0 32px;
+  height: 70px;
+}
+.modern-navbar .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #464545;
+}
+.modern-navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.modern-navbar .nav-menu li {
+  position: relative;
+}
+.modern-navbar .nav-menu li a {
+  color: #464545;
+  font-weight: 500;
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 1.08rem;
+  padding: 4px 0;
+}
+.modern-navbar .nav-menu li a.active,
+.modern-navbar .nav-menu li a:hover {
+  color: #cb3fe4;
+  text-decoration: underline;
+}
+.modern-navbar .nav-btn {
+  background: #fff;
+  color: #8A2BE2;
+  border-radius: 24px;
+  font-weight: 700;
+  padding: 10px 32px;
+  box-shadow: 0 2px 8px rgba(138,43,226,0.08);
+  border: 2px solid #fff;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1.08rem;
+  text-decoration: none;
+}
+.modern-navbar .nav-btn:hover {
+  background: #e0cfff;
+  color: #8A2BE2;
+  border: 2px solid #e0cfff;
+}
+@media (max-width: 900px) {
+  .modern-navbar {
+    padding: 0 8px;
+    height: auto;
+  }
+  .modern-navbar .nav-menu {
+    gap: 16px;
+  }
+  .modern-navbar .nav-btn {
+    padding: 8px 18px;
+    font-size: 1rem;
   }
 } 

@@ -336,28 +336,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background:  rgb(236, 236, 236);
+  color: #fff;
+  box-shadow: 0 2px 16px rgba(138,43,226,0.28);
   padding: 0 32px;
   height: 70px;
-  box-shadow: 0 2px 8px rgba(120, 72, 232, 0.07);
-  font-family: 'Sarabun', sans-serif;
 }
-
-.nav-logo {
+.modern-navbar .nav-logo {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #6c47e8;
+  color: #464545;
 }
-
-.nav-logo img {
-  width: 36px;
-  height: 36px;
-}
-
-.nav-menu {
+.modern-navbar .nav-menu {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -365,54 +358,50 @@ header {
   margin: 0;
   padding: 0;
 }
-
-.nav-menu li {
+.modern-navbar .nav-menu li {
   position: relative;
 }
-
-.nav-menu a {
-  color: #222;
-  text-decoration: none;
-  font-size: 1.08rem;
+.modern-navbar .nav-menu li a {
+  color: #464545;
   font-weight: 500;
-  padding: 4px 0;
   transition: color 0.2s;
-}
-
-.nav-menu a.active,
-.nav-menu a:hover {
-  color: #a084ee;
-}
-
-.nav-btn {
-  background: linear-gradient(90deg, #a084ee 60%, #6c47e8 100%);
-  color: #fff;
-  font-weight: 600;
-  padding: 10px 28px;
-  border-radius: 24px;
   text-decoration: none;
   font-size: 1.08rem;
-  box-shadow: 0 2px 8px rgba(120, 72, 232, 0.10);
-  transition: background 0.2s, box-shadow 0.2s;
+  padding: 4px 0;
 }
-
-.nav-btn:hover {
-  background: linear-gradient(90deg, #6c47e8 60%, #a084ee 100%);
-  box-shadow: 0 4px 16px rgba(120, 72, 232, 0.18);
+.modern-navbar .nav-menu li a.active,
+.modern-navbar .nav-menu li a:hover {
+  color: #cb3fe4;
+  text-decoration: underline;
 }
-
+.modern-navbar .nav-btn {
+  background: #fff;
+  color: #8A2BE2;
+  border-radius: 24px;
+  font-weight: 700;
+  padding: 10px 32px;
+  box-shadow: 0 2px 8px rgba(138,43,226,0.08);
+  border: 2px solid #fff;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1.08rem;
+  text-decoration: none;
+}
+.modern-navbar .nav-btn:hover {
+  background: #e0cfff;
+  color: #8A2BE2;
+  border: 2px solid #e0cfff;
+}
 @media (max-width: 900px) {
   .modern-navbar {
-    flex-direction: column;
+    padding: 0 8px;
     height: auto;
-    padding: 8px 8px;
-    gap: 8px;
   }
-  .nav-menu {
+  .modern-navbar .nav-menu {
     gap: 16px;
   }
-  .nav-btn {
-    margin-top: 8px;
+  .modern-navbar .nav-btn {
+    padding: 8px 18px;
+    font-size: 1rem;
   }
 }
 
@@ -535,7 +524,7 @@ header {
 
 /* Contact Section */
 .contact-section {
-  background: linear-gradient(135deg, #f3f7f5 0%, #bbc0bc 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #bbc0bc 100%);
   min-height: 100vh;
   padding: 64px 0 64px 0;
   text-align: center;
@@ -544,9 +533,9 @@ header {
 .contact-title {
   font-size: 3rem;
   font-weight: 900;
-  color: #2d4739;
+  color: #8A2BE2;
   letter-spacing: 3px;
-  background: #f6fff8;
+  background: #fcfcfc;
   display: inline-block;
   padding: 40px 100px;
   border-radius: 32px;
@@ -555,7 +544,7 @@ header {
     0 8px 32px 0 rgba(60, 180, 120, 0.10),
     0 1.5px 8px 0 rgba(60, 180, 120, 0.08),
     0 0.5px 1.5px 0 rgba(60, 180, 120, 0.06);
-  border: 2.5px solid #b7e5c2;
+  border: 2.5px solid #8A2BE2;
   transition: box-shadow 0.2s, transform 0.2s;
   position: relative;
   z-index: 2;
@@ -577,10 +566,10 @@ header {
 }
 
 .contact-card {
-  background: #f6fff8;
+  background: #ffffff;
   border-radius: 24px;
   box-shadow: 0 4px 24px rgba(60, 180, 120, 0.10);
-  border: 1.5px solid #b7e5c2;
+  border: 1.5px solid #8A2BE2;
   padding: 32px 36px;
   min-width: 260px;
   max-width: 320px;
@@ -592,8 +581,8 @@ header {
 
 .contact-card:hover {
   transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 8px 32px rgba(60, 180, 120, 0.18);
-  border: 2.5px solid #43e97b;
+  box-shadow: 0 8px 32px rgba(167, 34, 179, 0.18);
+  border: 2.5px solid #8A2BE2;
 }
 
 .contact-icon-bg {
@@ -605,24 +594,24 @@ header {
   justify-content: center;
   margin-bottom: 18px;
   box-shadow: 0 2px 12px rgba(60, 180, 120, 0.10);
-  border: 1.5px solid #b7e5c2;
+  border: 1.5px solid #8A2BE2;
   background: #e8f6ef;
 }
 
 .contact-icon-bg.phone {
-  background: linear-gradient(135deg, #43e97b 0%, #b7e5c2 100%);
+  background: linear-gradient(135deg, #8A2BE2 0%, #8A2BE2 100%);
 }
 
 .contact-icon-bg.gmail {
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  background: linear-gradient(135deg, #8A2BE2 0%, #8A2BE2 100%);
 }
 
 .contact-icon-bg.ig {
-  background: linear-gradient(135deg, #fceabb 0%, #e8f6ef 100%);
+  background: linear-gradient(135deg, #8A2BE2 0%, #8A2BE2 100%);
 }
 
 .contact-icon-bg.fb {
-  background: linear-gradient(135deg, #b7e5c2 0%, #a8edea 100%);
+  background: linear-gradient(135deg, #8A2BE2 0%, #8A2BE2 100%);
 }
 
 .contact-icon {
@@ -669,72 +658,4 @@ header {
     border-radius: 18px;
     margin-bottom: 32px;
   }
-}
-.modern-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  padding: 0 32px;
-  height: 70px;
-  box-shadow: 0 2px 8px rgba(120, 72, 232, 0.07);
-  font-family: 'Sarabun', sans-serif;
-}
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #6c47e8;
-}
-
-.nav-logo img {
-  width: 36px;
-  height: 36px;
-}
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu li {
-  position: relative;
-}
-
-.nav-menu a {
-  color: #222;
-  text-decoration: none;
-  font-size: 1.08rem;
-  font-weight: 500;
-  padding: 4px 0;
-  transition: color 0.2s;
-}
-
-.nav-menu a.active,
-.nav-menu a:hover {
-  color: #a084ee;
-}
-
-.nav-btn {
-  background: linear-gradient(90deg, #a084ee 60%, #6c47e8 100%);
-  color: #fff;
-  font-weight: 600;
-  padding: 10px 28px;
-  border-radius: 24px;
-  text-decoration: none;
-  font-size: 1.08rem;
-  box-shadow: 0 2px 8px rgba(120, 72, 232, 0.10);
-  transition: background 0.2s, box-shadow 0.2s;
-}
-
-.nav-btn:hover {
-  background: linear-gradient(90deg, #6c47e8 60%, #a084ee 100%);
-  box-shadow: 0 4px 16px rgba(120, 72, 232, 0.18);
 }
