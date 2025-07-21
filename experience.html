@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Experience - Wissawas Phonean</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sarabun:400,700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="experience.css">
 </head>
 <body>
@@ -19,230 +20,190 @@
       <li><a href="education.html">Education</a></li>
       <li class="nav-dropdown">
         <a href="certificate.html">Certificate</a>
-        <!-- <ul class="dropdown-menu">
-          <li><a href="#">Submenu 1</a></li>
-          <li><a href="#">Submenu 2</a></li>
-        </ul> -->
       </li>
     </ul>
     <a href="contact.html" class="nav-btn">Contact</a>
   </nav>
-  <div class="exp-pagination">
-    <button class="exp-page-btn" disabled>
-      <span>&larr;</span>
-    </button>
-    <button class="exp-page-num active">1</button>
-    <button class="exp-page-num">2</button>
-    <button class="exp-page-num">3</button>
-    <button class="exp-page-btn">
-      <span>&rarr;</span>
-    </button>
-  </div>
-  <div class="exp-container">
-    <div class="exp-left">
-      <div class="exp-work">WORK</div>
-      <div class="exp-title">Experience</div>
-      <div class="exp-desc">
-        This page is part of my portfolio, showcasing a project I designed and developed on my own during my studies to practice and strengthen my skills.
+
+  <main class="page-container">
+    <div class="custom-pagination">
+      
+      <button class="page-num active" data-page="1">1</button>
+      <button class="page-num" data-page="2">2</button>
+      <button class="page-num" data-page="3">3</button>
+      <button class="page-num" data-page="4">4</button>
+      <button class="page-num" data-page="5">5</button>
+      <button class="page-num" data-page="6">6</button>
+      
+    </div>
+    <div class="exp-page" data-page="1" style="display:block;">
+      <div class="project-header">
+        <h1 class="project-title-main" style="font-size: 4.5rem; line-height: 1;">STRAIGHT LEND</h1>
+        <h2 class="project-subtitle" style="font-size: 2rem; line-height: 1;">FULL-STACK P2P LENDING SIMULATION PLATFORM</h2>
+      </div>
+      <div class="project-body">
+        <div class="project-content-left">
+          <p class="project-desc-main">
+            Straight Lend is a web-based simulation platform that <br> replicates the peer-to-peer (P2P) lending process,<br> developed entirely for educational purposes (no <br>real transactions involved).
+          </p>
+          <p class="project-desc-highlight" style="color: #8A2BE2;">
+            I was primarily responsible for building the full <br>functionality of the platform—including frontend <br>development, backend logic, and database integration.<br> The UI/UX design and ER Diagram were co-designed<br> with a teammate.
+          </p>
+          <p class="project-desc-main">
+            The system allows users to register as borrowers or<br> lenders, apply or offer loans, upload verification<br> documents, and track approval status. An admin<br> panel supports user validation, interest rate checks,<br> and transaction monitoring based on Thai financial <br>regulations.
+          </p>
+          <div class="project-features">
+            <h4>KEY FEATURES:</h4>
+            <ul>
+              <li>Role-based login (Borrower / Lender / Admin)</li>
+              <li>Loan offer & application workflows</li>
+              <li>Identity/document upload & admin approval</li>
+              <li>Interest rate capped by law (5% annual)</li>
+              <li>Real-time data storage in MySQL</li>
+              <li>Admin dashboard with approval/risk statistics</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <h4>TECHNOLOGIES USED:</h4>
+            <ul>
+              <li>Frontend: HTML, CSS, JavaScript</li>
+              <li>Backend: Node.js, Express.js</li>
+              <li>Database: MySQL (with relational schema)</li>
+              <li>Co-designed: UI & ER Diagram</li>
+            </ul>
+          </div>
+          <img src="images/Register_Lender.png" alt="Feature Image" class="feature-image">
+          <img src="images/1.png" alt="Feature Image 2" class="feature-image1">
+          <img src="images/หน้าคำขอกู้.png" alt="Feature Image 2" class="feature-image2">
+          <img src="images/admin1.png" alt="Feature Image 2" class="feature-image3">
+        </div>
+        <div class="project-content-right">
+          <img src="images/login.png" alt="Straight Lend Login" class="project-main-image">
+          <img src="images/Register.png" alt="Gallery Image 1" class="project-main-image">
+          <img src="images/2.png" alt="Gallery Image 2" class="project-main-image">
+          <img src="images/3.png" alt="Gallery Image 3" class="project-main-image">
+          <img src="images/รายละเอียดขอสินเชื่อ.png" alt="Gallery Image 5" class="project-main-image">
+          <img src="images/ตารางชำระเงินกู้.png" alt="Gallery Image 6" class="project-main-image">
+          <img src="images/admin2.png" alt="Gallery Image 6" class="project-main-image">
+        </div>
       </div>
     </div>
-    <div class="exp-right">
-      <div class="exp-project" data-page="1">
-        <img src="images/powerbi.png" alt="Power BI Dashboard">
-        <div>
-          <div class="exp-proj-title">Power BI</div>
-          <div class="exp-proj-desc">
-            A Power BI dashboard that visualizes global video game sales by platform, genre, year, and rating, with interactive filtering.
-          </div>
-        </div>
+    <div class="exp-page" data-page="2" style="display:none;">
+      <div class="project-header">
+        <h2 class="openhouse-title">WEBSITE</h2>
+        <h1 class="openhouse-main">BU OPENHOUSE</h1>
       </div>
-      <div class="exp-project" data-page="1">
-        <img src="images/finalproject319.jpg" alt="BERT Model" data-video="DtHTsD6hhUA">
-        <div>
-          <div class="exp-proj-title">ERP Warehouse Management System Module</div>
-          <div class="exp-proj-desc">
-            Developed a web module for an ERP warehouse management system that supports full CRUD operations—Insert, Update, and Delete product data efficiently.
-          </div>
-        </div>
+      <div class="openhouse-desc">
+        <p>Developed a university news website in collaboration with one teammate.<br>
+        The system displays announcements and campus news through a clean and user-friendly interface.</p>
+        <p>Both team members were responsible for <b>UI design and frontend coding</b>.<br>
+        The project focused on <b>content layout, user experience design, and frontend structure</b>, without any backend integration.<br>
+        <b>Technologies used: HTML, CSS, and JavaScript</b>, fully responsive for both desktop and mobile devices.</p>
       </div>
-      <div class="exp-project" data-page="2" style="display:none;">
-        <img src="images/fakenew.png"
-             alt="ERP Module"
-             data-localvideo="images/fakenews.mov">
-        <div>
-          <div class="exp-proj-title">Developed a BERT model for classifying real and fake news</div>
-          <div class="exp-proj-desc">
-            by fine-tuning on a dataset of genuine and fake articles. Trained and evaluated with over 90% accuracy. Built a Flask web app to allow users to check news in real-time.
-          </div>
-        </div>
+      <div class="openhouse-img-row">
+        <iframe class="openhouse-video" width="560" height="315"
+          src="https://www.youtube.com/embed/NmbF9m5EE3U?start=1"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
-      <div class="exp-project" data-page="2" style="display:none;">
-        <img src="images/weather.png" alt="WeatherApp: Real-Time Forecasting">
-        <div>
-          <div class="exp-proj-title">WeatherApp: Real-Time Forecasting</div>
-          <div class="exp-proj-desc">
-            Provides real-time and detailed weather information for any city selected by the user.<br>
-            Features a clean, modern, and interactive user interface displaying the city name, temperature, weather conditions, and corresponding icons.<br><br>
+    </div>
+    <div class="exp-page" data-page="3" style="display:none;">
+      <div class="weatherapp-body">
+        <div class="weatherapp-left">
+          <h2 class="weatherapp-title">WEATHER<br>APP <span class="weatherapp-sub">Real-Time Forecasting</span></h2>
+          <p class="weatherapp-desc">
+            Developed a modern weather application that delivers <b>real-time and accurate weather</b> forecasts based on user-selected cities.<br>
+            The app features a <b>clean and interactive UI built with SwiftUI</b>, showing current temperature, weather conditions, dynamic icons, and favorite cities.<br>
+            I handled the full development process, including API integration, UI design, and state management.
+          </p>
+          <div class="weatherapp-tech">
             <b>Technologies Used:</b><br>
-            SwiftUI for UI design<br>
-            Combine for data binding<br>
-            MapKit for location display<br>
-            OpenWeatherMap API (for both weather data and geocoding)<br>
-            Swift Charts for trend visualization
+            <span class="tech">SwiftUI</span> for UI design<br>
+            <span class="tech">Combine</span> for reactive data binding<br>
+            <span class="tech">MapKit</span> for city location mapping<br>
+            <span class="tech">OpenWeatherMap API</span> for real-time weather and geocoding<br>
+            <span class="tech">Swift Charts</span> for visualizing weather trends
           </div>
         </div>
-      </div>
-      <div class="exp-project" data-page="3" style="display:none;">
-        <div class="exp-project-left">
-          <img id="straightlend-main-img" src="images/login.png" alt="Straight Lend">
-          <div class="exp-img-slots">
-            <div class="exp-img-slot"><img src="images/1.png" alt="" /></div>
-            <div class="exp-img-slot"><img src="images/2.png" alt="" /></div>
-            <div class="exp-img-slot"><img src="images/3.png" alt="" /></div>
-            <div class="exp-img-slot"><img src="images/4.png" alt="" /></div>
-           
-          </div>
-        </div>
-        <div>
-          <div class="exp-proj-title">STRAIGHT LEND</div>
-          <div class="exp-proj-desc">
-            Straight Lend, a platform that simulates the P2P lending process.<br>
-            Users can play the role of a borrower or a lender and go through each loan application step interactively.<br><br>
-            <b>The frontend is built with HTML, CSS, and JavaScript.</b><br>
-            While the backend uses Node.js and Express.js for server-side operations.<br>
-            MySQL is used to manage user and transaction data.
-          </div>
+        <div class="weatherapp-right">
+          <div class="scroll-hint">Scroll to view more &rarr;</div>
+          <img src="images/weather1.png" alt="Weather App Example 1" class="weatherapp-img">
+          <img src="images/weather2.png" alt="Weather App Example 2" class="weatherapp-img">
+          <img src="images/weather3.png" alt="Weather App Example 3" class="weatherapp-img">
+          <img src="images/weather4.png" alt="Weather App Example 4" class="weatherapp-img">
+          <img src="images/weather5.png" alt="Weather App Example 5" class="weatherapp-img">
         </div>
       </div>
     </div>
-  </div>
-  <div class="exp-img-overlay" id="expImgOverlay">
-    <button class="exp-img-close" id="expImgClose">&times;</button>
-    <img id="expOverlayImg" src="" alt="Preview" style="display:none;">
-    <iframe id="expOverlayVideo" style="display:none;" frameborder="0" allowfullscreen></iframe>
-    <video id="expOverlayLocalVideo" style="display:none;" controls muted></video>
-  </div>
-  <script>
-    document.querySelectorAll('.exp-project img').forEach(img => {
-      img.addEventListener('click', function() {
-        const overlay = document.getElementById('expImgOverlay');
-        const overlayImg = document.getElementById('expOverlayImg');
-        const overlayVideo = document.getElementById('expOverlayVideo');
-        const overlayLocalVideo = document.getElementById('expOverlayLocalVideo');
-        const videoId = this.getAttribute('data-video');
-        const localVideo = this.getAttribute('data-localvideo');
-        if (videoId) {
-          overlayImg.style.display = 'none';
-          overlayVideo.style.display = 'block';
-          overlayLocalVideo.style.display = 'none';
-          overlayVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-          overlayLocalVideo.src = '';
-        } else if (localVideo) {
-          overlayImg.style.display = 'none';
-          overlayVideo.style.display = 'none';
-          overlayLocalVideo.style.display = 'block';
-          overlayLocalVideo.muted = true;
-          overlayLocalVideo.src = localVideo;
-          overlayLocalVideo.play();
-          overlayVideo.src = '';
-        } else {
-          overlayImg.style.display = 'block';
-          overlayVideo.style.display = 'none';
-          overlayLocalVideo.style.display = 'none';
-          overlayImg.src = this.src;
-          overlayVideo.src = '';
-          overlayLocalVideo.src = '';
-        }
-        overlay.classList.add('active');
-      });
-    });
-    document.getElementById('expImgOverlay').addEventListener('mouseleave', function() {
-      this.classList.remove('active');
-      document.getElementById('expOverlayVideo').src = '';
-      document.getElementById('expOverlayLocalVideo').pause();
-      document.getElementById('expOverlayLocalVideo').src = '';
-    });
-    document.getElementById('expImgClose').addEventListener('click', function(e) {
-      e.stopPropagation();
-      document.getElementById('expImgOverlay').classList.remove('active');
-      document.getElementById('expOverlayVideo').src = '';
-      document.getElementById('expOverlayLocalVideo').pause();
-      document.getElementById('expOverlayLocalVideo').src = '';
-    });
-
-    const pageBtns = document.querySelectorAll('.exp-page-num');
-    const leftBtn = document.querySelector('.exp-page-btn[disabled], .exp-page-btn:first-child');
-    const rightBtn = document.querySelectorAll('.exp-page-btn')[1];
-    const projects = document.querySelectorAll('.exp-project');
-    let currentPage = 1;
-    const totalPages = 3;
-
-    function showPage(page) {
-      projects.forEach(proj => {
-        if (proj.getAttribute('data-page') == page) {
-          proj.style.display = '';
-        } else {
-          proj.style.display = 'none';
-        }
-      });
-      pageBtns.forEach((btn, idx) => {
-        if (idx + 1 === page) {
+    <div class="exp-page" data-page="4" style="display:none;">
+      <div class="powerbi-header">
+        <h1 class="powerbi-title">POWER BI</h1>
+        <h2 class="powerbi-sub">DASHBOARD</h2>
+      </div>
+      <div class="powerbi-desc">
+        <p>This dashboard is designed to analyze global video game sales by visualizing trends and distribution across platforms, game genres, and release periods. It utilizes key Power BI techniques such as data modeling, DAX calculations, and interactive slicers for in-depth analysis. The visuals—including line charts, donut charts, and KPI cards—are presented in a clear and intuitive way to support effective decision-making for users.
+        "This end-to-end Power BI dashboard was independently developed, covering all steps from data modeling and DAX calculations to interactive visual design."</p>
+      </div>
+      <div class="powerbi-img-grid">
+        <img src="images/powerbi.png" alt="Power BI Example 1" class="powerbi-img">
+        
+      </div>
+    </div>
+    <div class="exp-page" data-page="5" style="display:none;">
+      <div class="warehouse-header">
+        <h1 class="warehouse-title">WAREHOUSE MANAGEMENT</h1>
+      </div>
+      <div class="warehouse-desc">
+        <p>Developed a real-time warehouse management module for an ERP system, supporting full CRUD functionality for managing product, employee, and company data.
+        I was fully responsible for both frontend and backend development. This included designing and building web pages such as Home, Product, Employee, and Company, with each section connected to a live database.<br>
+        The backend was built using Node.js, while the frontend was developed with React, TypeScript, HTML/CSS, and Bootstrap. The system features a clean, responsive UI and allows users to interact with data in real-time.</p>
+      </div>
+      <div class="warehouse-video-embed" style="display: flex; justify-content: center; margin: 32px 0;">
+        <iframe width="700" height="394" src="https://www.youtube.com/embed/DtHTsD6hhUA" title="Warehouse Management Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 18px; box-shadow: 0 4px 24px rgba(138,43,226,0.10);"></iframe>
+      </div>
+    </div>
+    <div class="exp-page" data-page="6" style="display:none;">
+      <div class="fakenews-header">
+        <h1 class="fakenews-title">FAKE NEWS DETECTION WEB APP</h1>
+        <h2 class="fakenews-subtitle">CREATED AN AI-DRIVEN WEB APPLICATION TO DETECT AND<br>PREVENT THE SPREAD OF FAKE NEWS.</h2>
+      </div>
+      <div class="fakenews-desc">
+        <p>The system uses BERT (bert-base-uncased) fine-tuned via transfer learning for binary classification of real vs fake news.
+        I handled the entire development pipeline, including data preparation, model training with NLP techniques, and building a Flask web interface. The model was implemented using PyTorch and Hugging Face Transformers, achieving over 90% accuracy.<br>
+        The goal is to promote awareness and help users verify news content in real-time before spreading misinformation.</p>
+      </div>
+      <div class="fakenews-img-row" style="display: flex; justify-content: center; gap: 32px; margin: 32px 0; flex-wrap: wrap;">
+        <video controls muted style="max-width: 700px; width: 100%; border-radius: 18px; box-shadow: 0 4px 24px rgba(138,43,226,0.10); background: #fff;">
+          <source src="images/fakenews.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div class="custom-pagination">
+      
+      <button class="page-num active" data-page="1">1</button>
+      <button class="page-num" data-page="2">2</button>
+      <button class="page-num" data-page="3">3</button>
+      <button class="page-num" data-page="4">4</button>
+      <button class="page-num" data-page="5">5</button>
+      <button class="page-num" data-page="6">6</button>
+      
+    </div>
+    <script>
+      const pageBtns = document.querySelectorAll('.page-num');
+      const expPages = document.querySelectorAll('.exp-page');
+      pageBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const page = btn.getAttribute('data-page');
+          expPages.forEach(p => {
+            p.style.display = (p.getAttribute('data-page') === page) ? 'block' : 'none';
+          });
+          pageBtns.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
+        });
       });
-      leftBtn.disabled = (page === 1);
-      rightBtn.disabled = (page === totalPages);
-      currentPage = page;
-    }
-
-    pageBtns.forEach((btn, idx) => {
-      btn.addEventListener('click', () => showPage(idx + 1));
-    });
-    leftBtn.addEventListener('click', () => {
-      if (currentPage > 1) showPage(currentPage - 1);
-    });
-    rightBtn.addEventListener('click', () => {
-      if (currentPage < totalPages) showPage(currentPage + 1);
-    });
-
-    // เริ่มต้นแสดงหน้าแรก
-    showPage(1);
-
-    // สำหรับ STRAIGHT LEND
-    const mainImg = document.getElementById('straightlend-main-img');
-    const imgSlots = document.querySelectorAll('.exp-project[data-page="3"] .exp-img-slot');
-    const mainImgDefault = mainImg.src;
-
-    imgSlots.forEach(slot => {
-      slot.addEventListener('mouseenter', function() {
-        const imgSrc = this.getAttribute('data-img');
-        if (imgSrc) mainImg.src = imgSrc;
-      });
-      slot.addEventListener('mouseleave', function() {
-        mainImg.src = mainImgDefault;
-      });
-    });
-
-    // สำหรับ STRAIGHT LEND image slots overlay
-    const overlay = document.getElementById('expImgOverlay');
-    const overlayImg = document.getElementById('expOverlayImg');
-    const overlayVideo = document.getElementById('expOverlayVideo');
-    const overlayLocalVideo = document.getElementById('expOverlayLocalVideo');
-
-    imgSlots.forEach(slot => {
-      slot.addEventListener('click', function() {
-        const imgSrc = this.getAttribute('data-img');
-        if (imgSrc) {
-          overlayImg.style.display = 'block';
-          overlayImg.src = imgSrc;
-          if (overlayVideo) overlayVideo.style.display = 'none';
-          if (overlayLocalVideo) overlayLocalVideo.style.display = 'none';
-          overlay.classList.add('active');
-        }
-      });
-    });
-  </script>
+    </script>
+  </main>
 </body>
 </html>
